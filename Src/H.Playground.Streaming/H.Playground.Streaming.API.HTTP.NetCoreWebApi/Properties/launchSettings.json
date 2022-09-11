@@ -3,7 +3,7 @@
     "NetCoreWebApi - Local": {
       "commandName": "Project",
       "launchBrowser": true,
-      "launchUrl": "",
+      "launchUrl": "ui",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Local"
       },
