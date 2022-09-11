@@ -1,0 +1,15 @@
+{
+  "profiles": {
+    "NetCoreWebApi - Local": {
+      "commandName": "Project",
+      "launchBrowser": true,
+      "launchUrl": "",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Local"
+      },
+      "dotnetRunMessages": true,
+      "applicationUrl": "http://localhost:5261"
+    }
+  },
+  "$schema": "https://json.schemastore.org/launchsettings.json"
+}

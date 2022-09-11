@@ -1,0 +1,16 @@
+{
+  "profiles": {
+    "Client.CLI - ping": {
+      "commandName": "Project",
+      "commandLineArgs": "ping"
+    },
+    "Client.CLI - Stream Timestamp": {
+      "commandName": "Project",
+      "commandLineArgs": "StreamTimestamp"
+    },
+    "Client.CLI - Stream Data Entries": {
+      "commandName": "Project",
+      "commandLineArgs": "StreamDataEntry"
+    }
+  }
+}
