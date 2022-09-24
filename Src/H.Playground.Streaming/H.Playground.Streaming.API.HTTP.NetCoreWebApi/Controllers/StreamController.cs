@@ -31,5 +31,14 @@ namespace H.Playground.Streaming.API.HTTP.NetCoreWebApi.Controllers
             double? desiredDurationInSeconds = t?.ParseToDoubleOrFallbackTo(null);
             await streamProvider.StreamDataEntriesTo(Response.Body, desiredDuration: desiredDurationInSeconds == null ? null : TimeSpan.FromSeconds(desiredDurationInSeconds.Value));
         }
+
+        [HttpGet]
+        [Route(nameof(Numbers))]
+        public async Task Numbers([FromQuery] string? t)
+        {
+            Response.ContentType = "text/plain; charset=utf-8; x-subtype=json";
+            double? desiredDurationInSeconds = t?.ParseToDoubleOrFallbackTo(null);
+            await streamProvider.StreamNumbersTo(Response.Body, desiredDuration: desiredDurationInSeconds == null ? null : TimeSpan.FromSeconds(desiredDurationInSeconds.Value));
+        }
     }
 }
